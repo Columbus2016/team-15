@@ -1,5 +1,23 @@
-/*.testBorder {
-    border-width: 5px;
-    border-color: red;
-    border-style: solid;
-}*/
+h1 {
+    margin-top: -35px;
+    margin-bottom: -35px;
+}
+
+.profile-pic{
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.header{
+    font-size: 24px;
+    font-family: Material-Design-Icons;
+    font-weight: bold;
+}
+
+.btn-margin{
+    margin-bottom: 10px;
+}
+
+.jumboPic{
+    width: 675px;
+}
