@@ -13,12 +13,24 @@ $.ajax({
     type: 'GET',
     success: function (data) {
         for(var i = 0; i < 15; i++){
-            $('#leaderboard').append('<div class="row orange darken-2"><div>Username: ' + parseEmail(data[i].Username) +'</div>' +
+            $('#leaderboard').append('<tr><td>' + parseEmail(data[i].Username) +'</td>' +
+                '<td>' + data[i].Score +'<td></tr>');
+        }
+    }
+});
+/*
+$.ajax({
+    dataType: 'json',
+    url: 'data/teeamdata.json',
+    type: 'GET',
+    success: function (data) {
+        for(var i = 0; i < 5; i++){
+            $('#teamleaderboard').append('<div class="row hoverable orange darken-2"><div>Username: ' + parseEmail(data[i].Username) +'</div>' +
                 '<div>Score: ' + data[i].Score +'</div>');
         }
     }
 });
-
+*/
 $getPointsbtn.on('click', function(e){
     e.preventDefault();
     $.ajax({
