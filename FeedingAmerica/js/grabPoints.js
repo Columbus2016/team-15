@@ -18,39 +18,35 @@ $.ajax({
         }
     }
 });
-/*
+
 $.ajax({
     dataType: 'json',
-    url: 'data/teeamdata.json',
+    url: 'data/teamdata.json',
     type: 'GET',
     success: function (data) {
         for(var i = 0; i < 5; i++){
-            $('#teamleaderboard').append('<div class="row hoverable orange darken-2"><div>Username: ' + parseEmail(data[i].Username) +'</div>' +
-                '<div>Score: ' + data[i].Score +'</div>');
+            $('#teamLeaderboard').append('<tr><td>' + parseEmail(data[i].Teamname) +'</td>' +
+                '<td>' + data[i].Score +'<td></tr>');
         }
     }
 });
-*/
-$getPointsbtn.on('click', function(e){
-    e.preventDefault();
-    $.ajax({
-        dataType: 'json',
-        url: 'data/package.json',
-        type: 'GET',
-        success: function (data) {
-            $('#display').html(data.points[0].point);
-        }
-    });
-});
 
-$getTeambtn.on('click', function(e){
-    e.preventDefault();
+
     $.ajax({
         dataType: 'json',
         url: 'data/package.json',
         type: 'GET',
         success: function (data) {
-            $('#display2').html(data.points[0].point);
+            $('#display').html('<h1>'+data.points[0].point+'</h1>');
         }
     });
-});
+
+    $.ajax({
+        dataType: 'json',
+        url: 'data/package.json',
+        type: 'GET',
+        success: function (data) {
+            $('#display2').html('<h1>'+data.points[0].point+'</h1>');
+        }
+    });
+
