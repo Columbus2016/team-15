@@ -19,5 +19,12 @@ h1 {
 }
 
 .jumboPic{
+    border-width: 2px;
+    border-color: orange;
+    border-style: solid;
     width: 675px;
+}
+
+.card-fix{
+    margin-top: -1px;
 }
