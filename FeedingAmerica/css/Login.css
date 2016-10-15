@@ -1,0 +1,17 @@
+﻿
+    #login{
+              width: 50%;
+              float:left
+          }
+
+    #info{
+        width:50%;
+        float:left;
+    }
+
+    #textLog{
+        width: 50px;
+        height: 10px;
+        
+    }
+
