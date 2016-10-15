@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <nav class="orange darken-2">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="log.html">Log</a></li>
+                <li><a href="">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="login">
+        <script>
+    function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+
+    if (response.status === 'connected') {
+
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+      appId: '1117047008402470',
+    cookie     : true,
+    xfbml      : true,
+    version: 'v2.5'
+  });
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function testAPI() {
+    FB.api('/me', function (response) {
+        console.log('Good to see you, ' + response.email + '.');
+    });
+  }
+        </script>
+
+        <fb:login-button autologoutlink="true" scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+
+        <div class="container">
+            <div class="header">
+                About Us
+            </div>
+            <div class="row">
+                <div class="col s9">
+                    <div class="">
+                        <img class="jumboPic" src="img/ABOUT_PIC.jpg">
+                    </div>
+                    <br />
+                    <div>
+                        Feeding America partners with major brands
+                        and products that are commonly seen in grocery
+                        stores across the US, such as General Mills, Con
+                        Agra, and Food Lion. Through these partnerships,
+                        Feeding America receives donations in the form
+                        of meals or a percentage of certain products sales
+                        when shoppers purchase these products.
+                        <br />
+                        <br />
+                        By logging your purchases, you are competing with
+                        others who are also purchasing and logging these
+                        items. Feeding America currently uses on-package
+                        information to make shoppers aware that a portion
+                        of their purchases will benefit the organization
+                        and the people they serve, but by sharing your
+                        logs on social media you are helping spread
+                        awareness. Sharing your logs earns you points,
+                        but ultimately helps Feeding America spread their
+                        Mission.
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="card card-fix blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Donate Now</span>
+                            <p>Make your contributions today!!!</p>
+                        </div>
+                        <div class="card-action">
+                            <div class="btn" id="Donate">Donate Now</div>
+                            <script>
+document.getElementById('Donate').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'https://developers.facebook.com/docs/sharing/reference/share-dialog',
+    quote: "I donated to end hunger!"
+  }, function(response){});
+}
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

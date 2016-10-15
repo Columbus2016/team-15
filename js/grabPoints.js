@@ -1,11 +1,28 @@
 var $getPointsbtn = $('#grabPointsbtn');
 var $getTeambtn = $('#grabTeamPoints');
 
+$(document).ready(function () {
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+});
+
 function parseEmail(inputString){
     var index = inputString.indexOf('@');
     var defaultUserName = inputString.slice(0,index);
     return defaultUserName;
 }
+
+function share() {
+    document.getElementById('SubmitButton').onclick = function () {
+        FB.ui({
+            method: 'share',
+            display: 'popup',
+            href: 'http://localhost:52408/index.html',
+            quote: "Look at all the points I earned!"
+        }, function (response) { });
+    }
+}
+                       
 
 $.ajax({
     dataType: 'json',
