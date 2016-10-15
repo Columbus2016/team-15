@@ -1,14 +1,24 @@
 var $getPointsbtn = $('#grabPointsbtn');
 var $getTeambtn = $('#grabTeamPoints');
-var leaderBoardTable =
+
+function parseEmail(inputString){
+    var index = inputString.indexOf('@');
+    var defaultUserName = inputString.slice(0,index);
+    return defaultUserName;
+}
+
 $.ajax({
     dataType: 'json',
     url: 'data/leaderboard.json',
     type: 'GET',
     success: function (data) {
-        console.log(data[0].id);
+        for(var i = 0; i < 15; i++){
+            $('#leaderboard').append('<div class="row orange darken-2"><div>Username: ' + parseEmail(data[i].Username) +'</div>' +
+                '<div>Score: ' + data[i].Score +'</div>');
+        }
     }
 });
+
 $getPointsbtn.on('click', function(e){
     e.preventDefault();
     $.ajax({
