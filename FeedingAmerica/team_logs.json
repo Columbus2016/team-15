@@ -3,7 +3,7 @@
 "Date" : "10-14-2016",
 "Time" : "3:26 PM",
 "Team" : "CHOICES",
-"Contributor" : "Jane"
+"Contributor" : "Jane",
 "PointValue" : "640"
 }
 ,
@@ -11,7 +11,7 @@
 "Date" : "10-15-2016",
 "Time" : "8:51 AM",
 
-"Contributor" : "John"
+"Contributor" : "John",
 "PointValue" : "850"
 }
 ,
@@ -19,7 +19,7 @@
 "Date" : "10-12-2016",
 "Time" : "7:34 PM",
 "Team" : "KOMEN",
-"Contributor" : "Susan"
+"Contributor" : "Susan",
 "PointValue" : "500"
 }
 ,
@@ -27,7 +27,7 @@
 "Date" : "10-15-2016",
 "Time" : "4:21 PM",
 "Team" : "TEAM 15",
-"Contributor" : "Johnny"
+"Contributor" : "Johnny",
 "PointValue" : "10000"
 }
 ]
