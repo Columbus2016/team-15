@@ -38,7 +38,6 @@
     }
   }
 
-
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
@@ -56,9 +55,7 @@
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
-
   };
-
 
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -139,8 +136,11 @@ document.getElementById('SubmitButton').onclick = function() {
 }
                         </script>
                         <div class="header">Invite To Group:</div>
-                        <input placeholder="Email" id="UserName" type="text" class="validate">
-                        <div class="btn btn-margin">Invite</div>
+                        <input placeholder="Email" id="Destination" type="text" class="validate">
+                        <div class="btn btn-margin" id="emailBtn">Invite</div>
+                        <script>
+                            
+                        </script>                        
                     </div>
                     <div class="col s12">
                         <div class="header">Team Leaderboard</div>
@@ -162,5 +162,6 @@ document.getElementById('SubmitButton').onclick = function() {
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="js/grabPoints.js"></script>
+        <script type="text/javascript" src="js/email.js"></script>
 </body>
 </html>
