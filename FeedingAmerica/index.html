@@ -7,9 +7,49 @@
 </head>
 
 <body>
-<div class="btn">Hello World</div>
-<script type="text/javascript" src="js/test.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col s4">Profile Picture</div>
+            <div class="col s4">
+                <div class="row">
+                    Your Points
+                </div>
+                <div class="row">
+                    <div class="btn personal" id="grabPointsbtn" data="hello"> Grab Points</div>
+                </div>
+                <div class="row">
+                    <div id="display"></div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="row">
+                    Team Points
+                </div>
+                <div class="row">
+                    <div class="btn team" id="grabTeamPoints" data="team"> Grab Points</div>
+                </div>
+                <div class="row">
+                    <div id="display2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">Left WAll</div>
+            <div class="col s6">Right Wall</div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div class="input-field col m3">
+                    <div>Redeem:</div>
+                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/grabPoints.js"></script>
 </body>
 </html>
