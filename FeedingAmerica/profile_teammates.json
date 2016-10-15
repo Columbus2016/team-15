@@ -4,7 +4,7 @@
 "Username" : "Josh",
 "Email" : "jackiejr",
 "Score" : "10000",
-"link" : img/"PROFILE_PIC.jpg"
+"link" : "img/PROFILE_PIC.jpg"
 }
 ,
 {
@@ -12,7 +12,7 @@
 "Username" : "Melody",
 "Email" : "teammate1",
 "Score" : "5654",
-"link" : img/"TEAM_PIC2.jpg"
+"link" : "img/TEAM_PIC2.jpg"
 }
 ,
 {
@@ -20,7 +20,7 @@
 "Username" : "Johnny",
 "Email" : "teammate2",
 "Score" : "7854",
-"link" : img/"TEAM_PIC1.jpg"
+"link" : "img/TEAM_PIC1.jpg"
 }
 ,
 {
@@ -28,7 +28,7 @@
 "Username" : "Drew",
 "Email" : "teammate3",
 "Score" : "5445",
-"link" : img/"PROFILE_PIC.jpg"
+"link" : "img/PROFILE_PIC.jpg"
 }
 ,
 {
@@ -36,6 +36,6 @@
 "Username" : "Najlaa",
 "Email" : "teammate4",
 "Score" : "6586",
-"link" : img/"TEAM_PIC3.jpg"
+"link" : "img/TEAM_PIC3.jpg"
 }
 ]
