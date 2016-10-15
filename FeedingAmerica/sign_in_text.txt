@@ -2,4 +2,5 @@ Mission Statement:
 Our mission is to feed America’s hungry through a nationwide network of member food banks and engage our country in the fight to end hunger.
 This site is designed to log the unique SKU code located on specially marked products. 
 Users earn points by logging and sharing their activity to help Feeding America spread awareness.
- 
+
+To learn more specifically about the organization visit http://www.feedingamerica.org/about-us/how-we-work/.
