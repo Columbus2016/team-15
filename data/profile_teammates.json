@@ -1,0 +1,41 @@
+[
+{
+"id" : "1",
+"Username" : "Josh",
+"Email" : "jackiejr",
+"Score" : "10000",
+"link" : "img/PROFILE_PIC.jpg"
+}
+,
+{
+"id" : "2",
+"Username" : "Melody",
+"Email" : "teammate1",
+"Score" : "5654",
+"link" : "img/TEAM_PIC2.jpg"
+}
+,
+{
+"id" : "3",
+"Username" : "Johnny",
+"Email" : "teammate2",
+"Score" : "7854",
+"link" : "img/TEAM_PIC1.jpg"
+}
+,
+{
+"id" : "4",
+"Username" : "Drew",
+"Email" : "teammate3",
+"Score" : "5445",
+"link" : "img/PROFILE_PIC.jpg"
+}
+,
+{
+"id" : "5",
+"Username" : "Najlaa",
+"Email" : "teammate4",
+"Score" : "6586",
+"link" : "img/TEAM_PIC3.jpg"
+}
+]

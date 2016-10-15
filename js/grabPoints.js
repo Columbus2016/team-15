@@ -1,6 +1,3 @@
-var $getPointsbtn = $('#grabPointsbtn');
-var $getTeambtn = $('#grabTeamPoints');
-
 $(document).ready(function () {
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
@@ -11,7 +8,7 @@ function parseEmail(inputString){
     var defaultUserName = inputString.slice(0,index);
     return defaultUserName;
 }
-
+//allow user to share to facebook
 function share() {
     document.getElementById('SubmitButton').onclick = function () {
         FB.ui({
@@ -23,7 +20,7 @@ function share() {
     }
 }
                        
-
+//grab information for leaderboard
 $.ajax({
     dataType: 'json',
     url: 'data/leaderboard.json',
@@ -36,6 +33,7 @@ $.ajax({
     }
 });
 
+//grab information for user's group leaderboard
 $.ajax({
     dataType: 'json',
     url: 'data/teamdata.json',
@@ -48,22 +46,23 @@ $.ajax({
     }
 });
 
+//grab information for user's points
+$.ajax({
+    dataType: 'json',
+    url: 'data/package.json',
+    type: 'GET',
+    success: function (data) {
+        $('#display').html('<h1>'+data.points[0].point+'</h1>');
+    }
+});
 
-    $.ajax({
-        dataType: 'json',
-        url: 'data/package.json',
-        type: 'GET',
-        success: function (data) {
-            $('#display').html('<h1>'+data.points[0].point+'</h1>');
-        }
-    });
-
-    $.ajax({
-        dataType: 'json',
-        url: 'data/package.json',
-        type: 'GET',
-        success: function (data) {
-            $('#display2').html('<h1>'+data.points[0].point+'</h1>');
-        }
-    });
+//grab information for user's team group
+$.ajax({
+    dataType: 'json',
+    url: 'data/package.json',
+    type: 'GET',
+    success: function (data) {
+        $('#display2').html('<h1>'+data.points[0].point+'</h1>');
+    }
+});
 

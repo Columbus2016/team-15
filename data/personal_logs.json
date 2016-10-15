@@ -3,31 +3,31 @@
 "Date" : "10-14-2016",
 "Time" : "3:26 PM",
 "Item" : "CHEERIOS",
-"SKU" : "ASD987xc"
-"Point Value" : "300"
+"SKU" : "ASD987xc",
+"PointValue" : "300"
 }
 ,
 {
 "Date" : "10-14-2016",
 "Time" : "3:32 PM",
 "Item" : "CAMPBELLS",
-"SKU" : "ZXC789dsa"
-"Point Value" : "80"
+"SKU" : "ZXC789dsa",
+"PointValue" : "80"
 }
 ,
 {
 "Date" : "10-14-2016",
 "Time" : "3:34 PM",
 "Item" : "POPCORN",
-"SKU" : "QWE456vcx"
-"Point Value" : "550"
+"SKU" : "QWE456vcx",
+"PointValue" : "550"
 }
 ,
 {
 "Date" : "10-14-2016",
 "Time" : "3:37 PM",
 "Item" : "FIG NEWTONS",
-"SKU" : "POI321iop"
-"Point Value" : "200"
+"SKU" : "POI321iop",
+"PointValue" : "200"
 }
 ]
